@@ -5,27 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dating Web Site</title>
     <script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+<style>
+fieldset {
+    background-color: lightyellow;
+    border: 10px solid yellow; 
+    margin-bottom: 10px;
+    width: 720px;
+}
+
+label {
+    width: 180px;
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+}
+
+.sex{
+    width: auto;    
+}
+
+textarea {
+    width: 360px;
+    height: 50px;
+}
+
+.left {
+    width: 60px;
+    text-align: center;
+    background-color: red;
+    color: white;
+}
+
+.right {
+    width: 60px;
+    text-align: center;
+    background-color: purple;
+    color: white;
+}
+
+label:hover { 
+    font-size:40px;
+}
+</style>
 </head>
 <body>
     <h1>Please Enter Your Details For Our Dating Website!</h1>
-    <form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" enctype="multipart/form-data">
+    <form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post" enctype="multipart/form-data">
 <!--- Your Face -->
     <fieldset>
-        <legend>Your Face</legend>
-        <label for="avatar">Your image:</label><input type="file" id="avatar" name="avatar" required><br>
-        <label for="avatar">Image preview:</label><img id="preview">
-    </fieldset>
+        <legend><h3>Your Face</h3></legend>
+        <label for="avatar">Your image:</label>
+            <input type="file" id="avatar" name="avatar" required><br>
+        <label for="avatar">Image preview:</label>
+            <img id="preview">
+    </fieldset><br>
 <!-- Your General Details -->
     <fieldset>
-        <legend>Your General Details</legend>
+        <legend><h3>Your General Details</h3></legend>
         <label for="fullname">Name:</label>
             <input type="text" id="fullname" name="fullname" palceholder="Enter Your Name" required><br>
         <label for="gender">Gender:</label>
-            <input type="radio" id="gender" name="sex" value="Male">Male
-            <input type="radio" id="gender" name="sex" value="Female">Female<br>
-        <label for="age">Age:</label><input type="number" name="age" required><br>
-        <label for="date">Date of birth:</label><input type="date" id="birthday" name="birthday" required><br>
-        <label for="color">Favorite color:</label><input type="color" id="color" name="color" ><br>
+            <input type="radio" name="sex" value="Male"><label class="sex">Male</label>
+            <input type="radio" name="sex" value="Female"><label class="sex">Female</label><br>
+        <label for="age">Age:</label>
+            <input type="number" name="age" min="0" max="99" step="1" value="18" required><br>
+        <label for="date">Date of birth:</label>
+            <input type="date" id="birthday" name="birthday" required><br>
+        <label for="color">Favorite color:</label>
+            <input type="color" id="color" name="color" ><br>
         <label for="country">Which country:</label>
             <select name="country">
                 <option></option>
@@ -36,25 +83,39 @@
                 <option value="ukraine">Ukraine</option>
                 <option value="newzealand">New Zealand</option>
             </select>
-    </fieldset>
+    </fieldset><br>
 <!-- Your Indicators -->
     <fieldset>
-        <legend>Your Indicators</legend>
+        <!--<legend><h3>Your Indicators</h3></legend>
         <label for="height">Height:</label>
-            Short<input type="range" min="0" max="100" step="5" value="50" id="height" name="height">Tall<br>
+            <span class="left">Short</span>
+            <input type="range" min="0" max="100" step="5" value="50" id="height" name="height">
+            <span class="right">Tall</span><br>
         <label for="salary">Salary:</label>
-            Poor<input type="range" min="0" max="100" step="5" value="50" id="salary" name="salary">Rich<br>
-    </fieldset>
+            <span class="left">Poor</span>
+            <input type="range" min="0" max="100" step="5" value="50" id="salary" name="salary">
+            <span class="right">Rich</span><br>-->
+        <legend>Your Indicators</legend>
+        <label for="height">Height:</label><label class="left">Short</label>  
+        <input type="range" min="0" max="100" id="height" name="height"> 
+        <label class="right">Tall</label> <br>
+        <label for="salary">Salary:</label><label class="left">Poor</label>
+        <input type="range" min="0" max="100" id="salary" name="salary"> 
+        <label class="right">Rich</label>
+    </fieldset><br>
 <!-- Your Contact Information -->
     <fieldset>
-        <legend>Your Contact Information</legend>
-        <label for="email">Email:</label><input type="email" id="mail" name="mail" required><br>
-        <label for="mobile">Mobile:</label><input type="tel" id="mobile" name="mobile"><br>
-        <label for="address">Address:</label><textarea rows="2" cols="25"></textarea><br>
+        <legend><h3>Your Contact Information</h3></legend>
+        <label for="email">Email:</label>
+            <input type="email" id="mail" name="mail" required><br>
+        <label for="mobile">Mobile:</label>
+            <input type="tel" id="mobile" name="mobile"><br>
+        <label for="address">Address:</label>
+            <textarea rows="2" cols="25"></textarea><br>
         <label for="contact">Method to contact you:</label>
-            <input type="checkbox" name="email" value="email">Email
-            <input type="checkbox" name="whatsapp" value="whatsapp">Whatsapp
-            <input type="checkbox" name="inappchat" value="inappchat">In-app chat
+            <input type="checkbox" name="email" value="email"><span>Email</span>
+            <input type="checkbox" name="whatsapp" value="whatsapp"><span>Whatsapp</span>
+            <input type="checkbox" name="inappchat" value="inappchat"><span>In-app chat</span>
     </fieldset>
 
     <input type="submit" value="submit">
