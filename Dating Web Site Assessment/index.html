@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dating Web Site</title>
+    <script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+</head>
+<body>
+    <h1>Please Enter Your Details For Our Dating Website!</h1>
+    <form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" enctype="multipart/form-data">
+<!--- Your Face -->
+    <fieldset>
+        <legend>Your Face</legend>
+        <label for="avatar">Your image:</label><input type="file" id="avatar" name="avatar" required><br>
+        <label for="avatar">Image preview:</label><img id="preview">
+    </fieldset>
+<!-- Your General Details -->
+    <fieldset>
+        <legend>Your General Details</legend>
+        <label for="fullname">Name:</label>
+            <input type="text" id="fullname" name="fullname" palceholder="Enter Your Name" required><br>
+        <label for="gender">Gender:</label>
+            <input type="radio" id="gender" name="sex" value="Male">Male
+            <input type="radio" id="gender" name="sex" value="Female">Female<br>
+        <label for="age">Age:</label><input type="number" name="age" required><br>
+        <label for="date">Date of birth:</label><input type="date" id="birthday" name="birthday" required><br>
+        <label for="color">Favorite color:</label><input type="color" id="color" name="color" ><br>
+        <label for="country">Which country:</label>
+            <select name="country">
+                <option></option>
+                <option value="china">China</option>
+                <option value="usa">United States</option>
+                <option value="uk">UK</option>
+                <option value="japan">Japan</option>
+                <option value="ukraine">Ukraine</option>
+                <option value="newzealand">New Zealand</option>
+            </select>
+    </fieldset>
+<!-- Your Indicators -->
+    <fieldset>
+        <legend>Your Indicators</legend>
+        <label for="height">Height:</label>
+            Short<input type="range" min="0" max="100" step="5" value="50" id="height" name="height">Tall<br>
+        <label for="salary">Salary:</label>
+            Poor<input type="range" min="0" max="100" step="5" value="50" id="salary" name="salary">Rich<br>
+    </fieldset>
+<!-- Your Contact Information -->
+    <fieldset>
+        <legend>Your Contact Information</legend>
+        <label for="email">Email:</label><input type="email" id="mail" name="mail" required><br>
+        <label for="mobile">Mobile:</label><input type="tel" id="mobile" name="mobile"><br>
+        <label for="address">Address:</label><textarea rows="2" cols="25"></textarea><br>
+        <label for="contact">Method to contact you:</label>
+            <input type="checkbox" name="email" value="email">Email
+            <input type="checkbox" name="whatsapp" value="whatsapp">Whatsapp
+            <input type="checkbox" name="inappchat" value="inappchat">In-app chat
+    </fieldset>
+
+    <input type="submit" value="submit">
+
+    </div>
+    </form>
+
+</body>
+</html>
