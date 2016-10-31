@@ -71,7 +71,7 @@ p {
 }
 
 @media (max-width: 767px) {
-    .col-lg-4 {
+    .col-xs-12 {
         width: calc(100%-20px);
     }
 }
