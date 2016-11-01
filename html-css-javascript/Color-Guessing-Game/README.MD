@@ -4,14 +4,14 @@ This assessment task requires you to make a simple color guessing game. This gam
 
 When the web page is loaded, the player sees a message like this.
 
-Image: https://spark-public.s3.amazonaws.com/phoenixassets/html-css-javascript/Screen%20Shot%202015-08-30%20at%2011.58.42%20PM.png
+![Alt text](https://spark-public.s3.amazonaws.com/phoenixassets/html-css-javascript/Screen%20Shot%202015-08-30%20at%2011.58.42%20PM.png)
 
 
 As you can see, the objective of the game is for the player to guess the color which your program is thinking of. The player needs to enter their guess, such as cyan.
 
 
 
-Image: https://spark-public.s3.amazonaws.com/phoenixassets/html-css-javascript/Screen%20Shot%202015-08-30%20at%2011.59.49%20PM.png
+![Alt text](https://spark-public.s3.amazonaws.com/phoenixassets/html-css-javascript/Screen%20Shot%202015-08-30%20at%2011.59.49%20PM.png)
 
 
  A response from the browser will then be shown.
@@ -20,29 +20,29 @@ Image: https://spark-public.s3.amazonaws.com/phoenixassets/html-css-javascript/S
 
 
 
-Image: https://spark-public.s3.amazonaws.com/phoenixassets/html-css-javascript/Screen%20Shot%202015-08-31%20at%2012.01.06%20AM.png
+![Alt text](https://spark-public.s3.amazonaws.com/phoenixassets/html-css-javascript/Screen%20Shot%202015-08-31%20at%2012.01.06%20AM.png)
 2.	If the color entered by the player is in the list of colors used by the game but the color entered by the player is alphabetically higher than the answer, an appropriate message like this is shown:
 
 
 
-Image: https://spark-public.s3.amazonaws.com/phoenixassets/html-css-javascript/Screen%20Shot%202015-08-31%20at%2012.02.19%20AM.png
+![Alt text](https://spark-public.s3.amazonaws.com/phoenixassets/html-css-javascript/Screen%20Shot%202015-08-31%20at%2012.02.19%20AM.png)
 3.	If the color entered by the player is in the list of colors used by the game but the color entered by the player is alphabetically lower than the answer, an appropriate message like this is shown:
 
 
 
-Image: https://spark-public.s3.amazonaws.com/phoenixassets/html-css-javascript/Screen%20Shot%202015-08-31%20at%2012.03.37%20AM.png
+![Alt text](https://spark-public.s3.amazonaws.com/phoenixassets/html-css-javascript/Screen%20Shot%202015-08-31%20at%2012.03.37%20AM.png)
 4.	If the color entered by the player is correct the web page background is changed to that color and an appropriate message is shown:
 
 
 
-Image: https://spark-public.s3.amazonaws.com/phoenixassets/html-css-javascript/Screen%20Shot%202015-08-31%20at%2012.04.51%20AM.png
+![Alt text](https://spark-public.s3.amazonaws.com/phoenixassets/html-css-javascript/Screen%20Shot%202015-08-31%20at%2012.04.51%20AM.png)
 
 
 This is what a web page looks like when the message is shown on top of a web page where the background has been changed to orange.
 
 
 
-Image: https://spark-public.s3.amazonaws.com/phoenixassets/html-css-javascript/Screen%20Shot%202015-08-31%20at%2012.06.12%20AM.png
+![Alt text](https://spark-public.s3.amazonaws.com/phoenixassets/html-css-javascript/Screen%20Shot%202015-08-31%20at%2012.06.12%20AM.png)
 
 A Flowchart
 
@@ -50,7 +50,7 @@ Here is a flowchart for the game, showing the basic behavior.
 
 
 
-Image: https://spark-public.s3.amazonaws.com/phoenixassets/html-css-javascript/Screen%20Shot%202015-08-31%20at%2012.07.48%20AM.png
+![Alt text](https://spark-public.s3.amazonaws.com/phoenixassets/html-css-javascript/Screen%20Shot%202015-08-31%20at%2012.07.48%20AM.png)
 A Note on Alphabetic Order
 
 In the game we use alphabetical order to provide hints to the player. Here are some examples of two strings where the first string is alphabetically higher than the second string. 
